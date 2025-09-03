@@ -63,7 +63,7 @@ def recomendación(dif_poder_val, recursos_val, salud_val, ventaja_enemigo_val):
         
         sistema.compute()
 
-        print("Variables de salida disponibles:", sistema.output)  # 👀 depuración
+        print("Variables de salida disponibles:", sistema.output)
 
         if 'dificultad' in sistema.output:
             score = float(sistema.output['dificultad'])
@@ -122,4 +122,5 @@ label_resultado = tk.Label(ventana, text="", wraplength=350, justify="center")
 label_resultado.pack(pady=20)
 
 ventana.mainloop()
+
 
