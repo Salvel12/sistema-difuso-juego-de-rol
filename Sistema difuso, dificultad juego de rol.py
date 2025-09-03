@@ -69,10 +69,10 @@ def recomendación(dif_poder_val, recursos_val, salud_val, ventaja_enemigo_val):
             score = float(sistema.output['dificultad'])
             return f"Dificultad recomendada: {score:.2f}"
         else:
-            return "⚠️ No se pudo calcular la dificultad (revisa reglas o rangos)."
+            return "No se pudo calcular la dificultad (revisa reglas o rangos)."
     
     except Exception as e:
-        return f"❌ Error en la recomendación: {e}"
+        return f"Error en la recomendación: {e}"
 
 
 def calcular():
@@ -122,3 +122,4 @@ label_resultado = tk.Label(ventana, text="", wraplength=350, justify="center")
 label_resultado.pack(pady=20)
 
 ventana.mainloop()
+
